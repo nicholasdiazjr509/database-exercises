@@ -2,7 +2,7 @@ USE codeup_test_db;
 DROP TABLE IF EXISTS albums;
 
 CREATE TABLE albums(
-    id VARCHAR (10) NOT NULL,
+    id INT UNSIGNED NOT NULL AUTO INCREMENT,
     artist VARCHAR (10) NOT NULL,
     name VARCHAR (20),
     release_date DATA (6),
