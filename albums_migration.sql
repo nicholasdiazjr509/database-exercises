@@ -9,5 +9,6 @@ CREATE TABLE albums(
     sales DECIMAL (6, 4),
     genre VARCHAR (8),
     PRIMARY KEY (id)
---
+
+--                    test test
 );
