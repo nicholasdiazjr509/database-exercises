@@ -1,18 +1,15 @@
 USE codeup_test_db;
-SELECT * FROM albums;
-UPDATE albums
-SET sales = sales * 10;
-SELECT * FROM albums;
+SELECT * FROM albums WHERE artist = 'Pink Floyd';
 
-SELECT * FROM albums WHERE release_date < 1980;
-Update albums
-SET release_date = releaase_date -100;
-WHERE release_date < 1980;
+SELECT release_date FROM albums WHERE name = 'Sgt. Peppers Lonely Hearts Club Band';
+SELECT  * FROM albums WHERE name = 'Nevermind';
 
-SELECT * FROM albums WHERE release_date BETWEEN 1800 AND 1899;
+SELECT  name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+SELECT sales FROM albums WHERE sales < 20;
+SELECT * FROM albums WHERE genre = 'rock';
 
-SELECT * FROM albums WHERE artist = 'Michael Jackson';
-UPDATE albums
-SET artist = 'Peter Jackson' WHERE artist = 'Michael Jackson';
 
-SELECT * FROM albums WHERE artist = 'Peter Jackson';
+
+
+
+

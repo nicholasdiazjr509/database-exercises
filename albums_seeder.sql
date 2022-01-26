@@ -1,6 +1,10 @@
 USE codeup_test_db;
+
+TRUNCATE albums;
+
 INSERT INTO albums (artist, name, release_date, genre, certified, sales)
-VALUES ('Michael Jackson', 'Thriller', 1982, 'Pop post-disco funk rock', 49.2, 70),
+VALUES
+('Michael Jackson', 'Thriller', 1982, 'Pop post-disco funk rock', 49.2, 70),
 ('AC/DC', 'Back in Black', 1980, 'Hard rock', 29.5, 50),
 ('Whitney Houston', 'The Bodyguard', 1992,	'R&B soul pop soundtrack', 32.4, 45),
 ('Meat Loaf', 'Bat Out of Hell', 1977, 'Hard rock, glam rock, progressive rock', 21.7, 44),
@@ -28,3 +32,4 @@ VALUES ('Michael Jackson', 'Thriller', 1982, 'Pop post-disco funk rock', 49.2, 7
 ('Guns N Roses', 'Appetite for Destruction', 1987, 'Hard rock', 21.6, 30);
 
 
+SELECT * FROM albums;
