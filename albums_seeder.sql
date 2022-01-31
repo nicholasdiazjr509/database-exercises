@@ -33,3 +33,4 @@ VALUES
 
 
 SELECT * FROM albums;
+
