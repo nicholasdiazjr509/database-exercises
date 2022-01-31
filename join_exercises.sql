@@ -42,15 +42,15 @@ SELECT d.dept_name AS 'Dept. name',
     AS employee_name,
        s.salary
 FROM employees
-         JOIN salaries s
+         JOIN salaries AS s
           ON employees.emp_no = s.emp_no
-         JOIN dept_manager dm
+         JOIN dept_manager AS dm
              ON s.emp_no = dm.emp_no
-        JOIN departments d
+        JOIN departments AS d
             ON dm.dept_no = d.dept_no
 WHERE s.to_date > NOW()
   AND dm.to_date > NOW()
-ORDER BY dept_name;
+ORDER BY d.dept_name;
 
 SELECT
        CONCAT (e.first_name, ' ', e.last_name) AS Employee_name,
