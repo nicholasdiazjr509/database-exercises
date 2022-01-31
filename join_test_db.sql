@@ -30,6 +30,12 @@ INSERT INTO users (name, email, role_id) VALUES
                  ('jane', 'jane@example.com', null),
                  ('mike', 'mike@example.com', null);
 
+INSERT INTO users (name, email, role_id) VALUES
+                ('nick', 'nick@example.com',1),
+                ('mike', 'mike@examplecom',2),
+                ('nicko', 'nicko@examnple.com', 3),
+                ('jon', 'jon@example.com', 4);
+
 SELECT * FROM users;
 
 -- #3
